@@ -18,7 +18,7 @@ Password Manager that uses a client/server architecture to store encrypted passw
 %build
 cd server
 make %{?_smp_mflags}
-cd ../cli
+cd ../src
 make %{?_smp_mflags}
 cd ../build/centos
 
@@ -26,7 +26,7 @@ cd ../build/centos
 rm -rf $RPM_BUILD_ROOT
 cd server
 %make_install
-cd ../cli
+cd ../src
 %make_install
 
 %pre
