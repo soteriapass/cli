@@ -1,5 +1,5 @@
-# soteria pass command line interface
-Command line interface for accessing information from the soteria server.
+# Soteria Pass CLI
+Command line interface for accessing information from the Soteria Pass server.
 
 ## Dependencies
 * [gRpc](http://www.grpc.io/)
