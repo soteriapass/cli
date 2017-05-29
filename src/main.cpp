@@ -297,7 +297,16 @@ int main(int argc, char** argv)
                 std::cout << "Password Manager Command Line Interface" << std::endl;
                 std::cout << "v1.0.0.0" << std::endl;
                 std::cout << std::endl;
-                std::cout << "TO BE COMPLETED" << std::endl;
+                std::cout << "Usage: pswmgr COMMAND" << std::endl;
+                std::cout << std::endl;
+                std::cout << "Commands:" << std::endl;
+                std::cout << "  -add_user (-a)       Adds a new user" << std::endl;
+                std::cout << "  -login (-l)          Will attempt a login, requires user (-user or -u)" << std::endl;
+                std::cout << "  -user (-u)           Passes an user as a parameter" << std::endl;
+                std::cout << "  -list                Lists all of the user's passwords" << std::endl;
+                std::cout << "  -delete_password     Will delete a password, user will be requested for the account name" << std::endl;
+                std::cout << "  -modify_password     Attempts to modify a password, user will be prompted for account name" << std::endl;
+                std::cout << "  -config (-c)         Explicitly specifies the config file" << std::endl;
                 break;
             }
             case ACTION_LISTPASSWORDS:
